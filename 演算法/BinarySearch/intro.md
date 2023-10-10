@@ -16,6 +16,6 @@ BINARY-SEARCH(array, num):
     return -1
 ```
 
-- Worst case performance: O(n)，要找的值剛好在陣列最後一個
+- Worst case performance: O(log n)，要找的值剛好在陣列最後一個
 - Best case performance: O(1)，要找的值剛好在陣列的第一個
-- Average performance: O(n/2)
+- Average performance: O(log n)
