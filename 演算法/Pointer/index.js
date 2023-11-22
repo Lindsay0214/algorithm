@@ -44,3 +44,24 @@ function palindrome (str) {
     console.log(true)
     return true
 }
+
+// Subsequence Problem, string <=> sub string
+function isSubsequence(subString, string) {
+    if (subString.length == 0 ) return true
+
+    let subStringPointer = 0
+    let stringPointer = 0
+
+    while (stringPointer < string.length) {
+        if (subString[subStringPointer] == string[stringPointer]) subStringPointer++
+        if (subStringPointer >= subString.length) return true
+        stringPointer++
+    }
+
+    return false
+}
+
+isSubsequence("hello", "hello Dear") // true
+isSubsequence("book", "brooklyn") // true
+isSubsequence("abc", "bac") // true
+
