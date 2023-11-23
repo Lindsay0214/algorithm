@@ -36,3 +36,4 @@ function maxSumSecond(arr, size) {
     return maxValue
 }
 maxSumSecond([2, 7, 3, 0, 6, 1, -5, -12, -11], 3) // 12
+
